@@ -1,0 +1,106 @@
+object Form16: TForm16
+  Left = 0
+  Top = 0
+  Caption = 'Form16'
+  ClientHeight = 279
+  ClientWidth = 337
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Shape1: TShape
+    Left = 76
+    Top = 76
+    Width = 11
+    Height = 11
+    Brush.Color = clLime
+    Shape = stCircle
+    OnMouseMove = Shape1MouseMove
+  end
+  object Shape2: TShape
+    Left = 116
+    Top = 108
+    Width = 11
+    Height = 11
+    Brush.Color = clRed
+    Shape = stSquare
+    OnMouseMove = Shape2MouseMove
+  end
+  object Label1: TLabel
+    Left = 224
+    Top = 16
+    Width = 26
+    Height = 13
+    Caption = 'Circle'
+  end
+  object Label2: TLabel
+    Left = 224
+    Top = 35
+    Width = 31
+    Height = 13
+    Caption = 'Label2'
+  end
+  object Label3: TLabel
+    Left = 261
+    Top = 35
+    Width = 31
+    Height = 13
+    Caption = 'Label3'
+  end
+  object Label4: TLabel
+    Left = 224
+    Top = 76
+    Width = 49
+    Height = 13
+    Caption = 'Square'
+  end
+  object Label5: TLabel
+    Left = 224
+    Top = 95
+    Width = 31
+    Height = 13
+    Caption = 'Label5'
+  end
+  object Label6: TLabel
+    Left = 261
+    Top = 95
+    Width = 31
+    Height = 13
+    Caption = 'Label6'
+  end
+  object ScrollBar1: TScrollBar
+    Left = 23
+    Top = 1
+    Width = 161
+    Height = 17
+    LargeChange = 20
+    Max = 145
+    Min = 22
+    PageSize = 0
+    Position = 76
+    SmallChange = 2
+    TabOrder = 0
+    OnChange = ScrollBar1Change
+  end
+  object ScrollBar2: TScrollBar
+    Left = 0
+    Top = 24
+    Width = 17
+    Height = 161
+    Kind = sbVertical
+    LargeChange = 20
+    Max = 162
+    Min = 22
+    PageSize = 0
+    Position = 76
+    SmallChange = 2
+    TabOrder = 1
+    OnChange = ScrollBar2Change
+  end
+end

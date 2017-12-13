@@ -1,0 +1,73 @@
+unit Unit14;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Menus, ExtCtrls;
+
+type
+  TForm14 = class(TForm)
+    MainMenu1: TMainMenu;
+    PopupMenu1: TPopupMenu;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    N4: TMenuItem;
+    N5: TMenuItem;
+    N6: TMenuItem;
+    N7: TMenuItem;
+    N8: TMenuItem;
+    Image1: TImage;
+    procedure N4Click(Sender: TObject);
+    procedure N6Click(Sender: TObject);
+    procedure N7Click(Sender: TObject);
+    procedure N8Click(Sender: TObject);
+    procedure N1Click(Sender: TObject);
+    procedure N2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form14: TForm14;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm14.N1Click(Sender: TObject);
+begin
+Image1.Picture.Graphic.LoadFromFile('C:\Users\stud\Desktop\VESELKOV IVAN\LABA 8\dog.jpg');
+end;
+
+procedure TForm14.N2Click(Sender: TObject);
+begin
+Image1.Picture.Graphic.LoadFromFile('C:\Users\stud\Desktop\VESELKOV IVAN\LABA 8\cat.jpg');
+end;
+
+procedure TForm14.N4Click(Sender: TObject);
+begin
+Form14.Close;
+end;
+
+procedure TForm14.N6Click(Sender: TObject);
+begin
+Form14.Close;
+end;
+
+procedure TForm14.N7Click(Sender: TObject);
+begin
+Image1.Picture.Graphic.LoadFromFile('C:\Users\stud\Desktop\VESELKOV IVAN\LABA 8\dog.jpg');
+//image1.Picture.Graphic.
+//Picture.Graphic.LoadFromFile('C:\1.bmp');
+end;
+
+procedure TForm14.N8Click(Sender: TObject);
+begin
+  Image1.Picture.Graphic.LoadFromFile('C:\Users\stud\Desktop\VESELKOV IVAN\LABA 8\cat.jpg');
+end;
+
+end.

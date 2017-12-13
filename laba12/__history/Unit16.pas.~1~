@@ -1,0 +1,75 @@
+unit Unit16;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls;
+
+type
+  TForm16 = class(TForm)
+    Panel1: TPanel;
+    ScrollBar1: TScrollBar;
+    ScrollBar2: TScrollBar;
+    Shape1: TShape;
+    Shape2: TShape;
+    procedure ScrollBar1Change(Sender: TObject);
+    procedure Shape1MouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
+    procedure Shape2MouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
+    procedure ScrollBar2Change(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form16: TForm16;
+
+implementation
+var
+num:boolean;
+{$R *.dfm}
+
+procedure TForm16.FormCreate(Sender: TObject);
+begin
+num:=true;
+end;
+
+procedure TForm16.ScrollBar1Change(Sender: TObject);
+begin
+if num  then  shape1.Left:=scrollbar1.Position
+else shape2.Left:=scrollbar1.Position;
+
+end;
+
+procedure TForm16.ScrollBar2Change(Sender: TObject);
+begin
+if num then Shape1.Top:=Scrollbar2.Position
+else shape2.Top:=scrollbar2.Position;
+end;
+
+procedure TForm16.Shape1MouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+begin
+SHAPE1. Brush.Color:=clAqua;
+shape1.Brush.Color:=clFuchsia;
+num:=true;
+Scrollbar1.Position:=shape1.Left;
+scrollbar2.Position:=shape1.Top;
+end;
+
+procedure TForm16.Shape2MouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+begin
+SHAPE2. Brush.Color:=clFuchsia;
+shape2.Brush.Color:=clAqua;
+num:=false;
+Scrollbar1.Position:=shape2.Left;
+scrollbar2.Position:=shape2.Top;
+end;
+
+end.

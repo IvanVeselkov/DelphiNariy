@@ -1,0 +1,97 @@
+object Form15: TForm15
+  Left = 0
+  Top = 0
+  Caption = 'Form15'
+  ClientHeight = 282
+  ClientWidth = 725
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -19
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 23
+  object RadioButton1: TRadioButton
+    Left = 24
+    Top = 8
+    Width = 161
+    Height = 17
+    Caption = 'RadioButton1'
+    TabOrder = 0
+  end
+  object RadioButton2: TRadioButton
+    Left = 24
+    Top = 31
+    Width = 161
+    Height = 17
+    Caption = 'RadioButton2'
+    TabOrder = 1
+  end
+  object RadioButton3: TRadioButton
+    Left = 24
+    Top = 54
+    Width = 161
+    Height = 17
+    Caption = 'RadioButton3'
+    TabOrder = 2
+  end
+  object RadioButton4: TRadioButton
+    Left = 24
+    Top = 77
+    Width = 161
+    Height = 14
+    Caption = 'RadioButton4'
+    TabOrder = 3
+  end
+  object RadioButton5: TRadioButton
+    Left = 24
+    Top = 97
+    Width = 161
+    Height = 17
+    Caption = 'RadioButton5'
+    TabOrder = 4
+  end
+  object RadioButton6: TRadioButton
+    Left = 24
+    Top = 120
+    Width = 161
+    Height = 17
+    Caption = 'RadioButton6'
+    TabOrder = 5
+  end
+  object RadioButton7: TRadioButton
+    Left = 24
+    Top = 143
+    Width = 161
+    Height = 17
+    Caption = 'RadioButton7'
+    TabOrder = 6
+  end
+  object RadioButton8: TRadioButton
+    Left = 24
+    Top = 166
+    Width = 161
+    Height = 17
+    Caption = 'RadioButton8'
+    TabOrder = 7
+  end
+  object RadioButton9: TRadioButton
+    Left = 24
+    Top = 189
+    Width = 161
+    Height = 17
+    Caption = 'RadioButton9'
+    TabOrder = 8
+  end
+  object RadioButton10: TRadioButton
+    Left = 24
+    Top = 212
+    Width = 161
+    Height = 17
+    Caption = 'RadioButton10'
+    TabOrder = 9
+  end
+end

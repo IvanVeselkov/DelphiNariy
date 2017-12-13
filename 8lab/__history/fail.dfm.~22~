@@ -1,0 +1,83 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Catdog'
+  ClientHeight = 136
+  ClientWidth = 327
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = Menu
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object dog: TImage
+    Left = 8
+    Top = 8
+    Width = 209
+    Height = 129
+    PopupMenu = PopupMenu1
+    OnMouseDown = dogMouseDown
+  end
+  object cat: TImage
+    Left = 240
+    Top = 8
+    Width = 201
+    Height = 121
+    PopupMenu = PopupMenu2
+    OnMouseDown = catMouseDown
+  end
+  object Menu: TMainMenu
+    Left = 40
+    Top = 200
+    object N1: TMenuItem
+      Caption = #1092#1072#1081#1083
+      object N2: TMenuItem
+        Caption = #1078#1080#1074#1086#1090#1085#1086#1077
+        object N5: TMenuItem
+          Caption = #1089#1086#1073#1072#1082#1072
+          OnClick = N5Click
+        end
+        object N6: TMenuItem
+          Caption = #1082#1086#1096#1082#1072
+          OnClick = N6Click
+        end
+      end
+      object N4: TMenuItem
+        Caption = #1074#1099#1093#1086#1076
+        OnClick = N4Click
+      end
+    end
+    object N3: TMenuItem
+      Caption = #1074#1099#1093#1086#1076
+      OnClick = N3Click
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 320
+    Top = 56
+    object N7: TMenuItem
+      Caption = #1089#1086#1073#1072#1082#1072
+      OnClick = N7Click
+    end
+    object N8: TMenuItem
+      Caption = #1082#1086#1096#1082#1072
+      OnClick = N8Click
+    end
+  end
+  object PopupMenu2: TPopupMenu
+    Left = 336
+    Top = 120
+    object N9: TMenuItem
+      Caption = #1089#1086#1073#1072#1082#1072
+      OnClick = N9Click
+    end
+    object N10: TMenuItem
+      Caption = #1082#1086#1096#1082#1072
+      OnClick = N10Click
+    end
+  end
+end
